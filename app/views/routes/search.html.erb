@@ -1,0 +1,12 @@
+<div class="well well-lg">
+  <%= form_for :search do |f| %>
+    <% labels = [["start_city", "Откуда"], ["finish_city", "Куда"]] %>
+    <% labels.each do |(id, label)| %>
+      <div class="form-group">
+        <label><%= label.to_s %></label>
+        <%= f.select id.to_sym, @cities.map { |city| [ city.name, city.id ] }, {},  {class: "form-control"} %>
+      </div>
+    <% end %>
+    <%= f.submit "Искать", class: "btn btn-primary"%>
+  <% end %>
+</div>
