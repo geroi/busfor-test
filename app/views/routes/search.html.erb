@@ -1,3 +1,9 @@
+<div class="panel panel-error">
+  <div id="error" class="panel-body">
+    <%= flash[:error] %>
+  </p>
+</div>
+
 <div class="well well-lg">
   <%= form_for :search do |f| %>
     <% labels = [["start_city", "Откуда"], ["finish_city", "Куда"]] %>
