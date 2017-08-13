@@ -9,3 +9,22 @@ ru:
       db_search: Ошибка поиска в БД
   flash:
     error: Ошибка
+  admin:
+    route:
+      singular: Маршрут
+      plural: Маршруты
+    carrier:
+      singular: Перевозчик
+      plural: Перевозчики
+    city:
+      singular: Город
+      plural: Города
+    routelog:
+      singular: Рейс
+      plural: Рейсы
+    station:
+      singular: Станция
+      plural: Станции
+    currency:
+      singular: Валюта
+      plural: Валюты
