@@ -1,0 +1,25 @@
+<h1>Расписание автобусов <%= @route_views.source.name %>-<%= @route_views.destination.name %></h1>
+<table class="table table-hover">
+  <tr>
+    <th>Дни работы</th>
+    <th>Город</th>
+    <th>Станция отправления</th>
+    <th>Время отправления</th>
+    <th>Город</th>
+    <th>Станция прибытия</th>
+    <th>Время прибытия</th>
+    <th>Перевозчик</th>
+  </tr>
+  <% @route_views.sort_by(&:departure_time).each do |route| %>
+    <tr>
+      <td><%= route.weekdays_str %></td>
+      <td><%= @route_views.source.name %></td>
+      <td><%= route.start_station.name %></td>
+      <td><%= route.departure_time %></td>
+      <td><%= @route_views.destination.name %></td>
+      <td><%= route.finish_station.name %></td>
+      <td><%= route.arrival_time %></td>
+      <td><%= route.carrier_name %></td>
+    </tr>
+  <% end %>
+</table>

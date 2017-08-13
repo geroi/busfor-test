@@ -5,5 +5,8 @@ namespace :data do
 
     LoadInitialData.call(files: ROUTE_LOGS)
     Rails.logger.info "Initial data loaded"
+
+    ParseRouteLogs.call
+    Rails.logger.info "Routing data parsed"
   end
 end

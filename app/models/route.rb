@@ -31,6 +31,22 @@ class Route < ApplicationRecord
     where(id: src_ids & dest_ids)
   end
 
+  # Generating reader methods for arrival/direction time
+  DIRECTIONS.each do |direction|
+    define_method "#{direction}_time" do
+      Time.strptime(
+        %(hours minutes).map { |unit| [direction, unit].join("_").to_sym }
+                        .map { |cmd| send(cmd) }.join(":"),
+                        TIME_FORMAT
+        )
+    end
+
+    define_method "#{direction}_time_str" do
+      [sprintf("%02d", send("#{direction}_hours")),
+       sprintf("%02d", send("#{direction}_minutes"))].join(":")
+    end
+  end
+
   private
 
   def check_source_destination_equality
