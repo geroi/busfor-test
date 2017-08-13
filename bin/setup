@@ -27,6 +27,9 @@ chdir APP_ROOT do
   #   cp 'config/database.yml.sample', 'config/database.yml'
   # end
 
+  puts "\n== Precompiling assets =="
+  system! 'rails assets:precompile'
+
   puts "\n== Preparing database =="
   system! 'bin/rails db:setup'
 
@@ -35,4 +38,7 @@ chdir APP_ROOT do
 
   puts "\n== Restarting application server =="
   system! 'bin/rails restart'
+
+  puts "\n== Seeding the initial data =="
+  system! 'bin/rails data:load'
 end
