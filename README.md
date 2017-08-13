@@ -1,24 +1,10 @@
-# README
+# Тестовое задание для backend-разработчиков
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Описание
+Rails-приложение, позволяющее построить расписание автобусного сообщения между городами по имеющейся информации об автобусных рейсах.
 
-Things you may want to cover:
+Установка производится запуском скрипта __bin/setup__, на все вопросы системы - соглашаться.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Приложение предоставляет два эндпоинта:
+  - [просмотр расписания автобусного сообщения между городами](http://127.0.0.1/)
+  - [просмотр и редактирование данных об автобусных рейсах](http://127.0.0.1/admin)
