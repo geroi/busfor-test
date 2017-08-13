@@ -1,0 +1,320 @@
+---
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '01:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: '09.06.2017'
+  :end_time: '09:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '06:30'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: '09.06.2017'
+  :end_time: '14:30'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: автостанция " Киев"
+  :start_date: '09.06.2017'
+  :start_time: '08:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, Стрийский автовокзал
+  :end_date: '09.06.2017'
+  :end_time: '15:30'
+  :carrier_name: '"Евроклуб" ООО'
+  :total_cost: '647.77'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '09:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: '09.06.2017'
+  :end_time: '17:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '11:30'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: '09.06.2017'
+  :end_time: '19:30'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: станция метро "Шулявская"
+  :start_date: '09.06.2017'
+  :start_time: '13:00'
+  :end_city_name: Львов
+  :station_end_name: МакДональдс
+  :end_date: '09.06.2017'
+  :end_time: '21:00'
+  :carrier_name: '"АТП-16145" ОДО'
+  :total_cost: '699.59'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '15:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: '09.06.2017'
+  :end_time: '23:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '18:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: 10.06.2017
+  :end_time: '02:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '20:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: 10.06.2017
+  :end_time: '04:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '20:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: 10.06.2017
+  :end_time: '04:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: станция метро "Шулявская"
+  :start_date: '09.06.2017'
+  :start_time: '20:30'
+  :end_city_name: Львов
+  :station_end_name: МакДональдс
+  :end_date: 10.06.2017
+  :end_time: '04:30'
+  :carrier_name: '"АТП-16145" ОДО'
+  :total_cost: '699.59'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '22:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: 10.06.2017
+  :end_time: '06:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: 'Автостанция "Киев" '
+  :start_date: '09.06.2017'
+  :start_time: '22:00'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, автостанция № 8
+  :end_date: 10.06.2017
+  :end_time: '06:00'
+  :carrier_name: '"Павлюк Виталий Иванович" ФЛП'
+  :total_cost: '687.93'
+  :currency: RUB
+- :start_city_name: Киев
+  :station_begin_name: Центральный автовокзал
+  :start_date: '09.06.2017'
+  :start_time: '21:20'
+  :end_city_name: Львов
+  :station_end_name: г. Львов, Стрийский автовокзал
+  :end_date: 10.06.2017
+  :end_time: '06:05'
+  :carrier_name: '"ВАСИЛЬКОВТРАНСАВТО" ЧП'
+  :total_cost: '582.99'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '08:00'
+  :end_city_name: Киев
+  :station_end_name: г. Киев,  автовокзал
+  :end_date: '09.06.2017'
+  :end_time: '22:00'
+  :carrier_name: '"Турист"ООО'
+  :total_cost: '1187.57'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '11:55'
+  :end_city_name: Киев
+  :station_end_name: 'Автостанция "Киев" '
+  :end_date: 10.06.2017
+  :end_time: '03:25'
+  :carrier_name: '"Денисівка-плюс"'
+  :total_cost: '1300'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '11:55'
+  :end_city_name: Киев Автовокзал "Центральный"
+  :station_end_name: Центральный автовокзал
+  :end_date: 10.06.2017
+  :end_time: '03:45'
+  :carrier_name: '"Денисівка-плюс"'
+  :total_cost: '1300'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '11:55'
+  :end_city_name: Киев
+  :station_end_name: Киев
+  :end_date: 10.06.2017
+  :end_time: '04:45'
+  :carrier_name: ООО "Автокомбинат-1"
+  :total_cost: '1454.6'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Центральный автовокзал
+  :start_date: '09.06.2017'
+  :start_time: '15:45'
+  :end_city_name: Киев
+  :station_end_name: Центральный автовокзал
+  :end_date: 10.06.2017
+  :end_time: '07:30'
+  :carrier_name: '"Центурион плюс" ЧП'
+  :total_cost: '1133.59'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Москва (Южные Ворота)
+  :start_date: '09.06.2017'
+  :start_time: '14:10'
+  :end_city_name: Киев
+  :station_end_name: г. Киев
+  :end_date: 10.06.2017
+  :end_time: '07:45'
+  :carrier_name: Физическое лицо-предприниматель Мазуленко Владимир Николаевич
+  :total_cost: '1500'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '16:20'
+  :end_city_name: Киев
+  :station_end_name: Центральный автовокзал
+  :end_date: 10.06.2017
+  :end_time: '07:50'
+  :carrier_name: '"Денисівка-плюс"'
+  :total_cost: '1600'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Теплый Стан"
+  :start_date: '09.06.2017'
+  :start_time: '18:00'
+  :end_city_name: Киев
+  :station_end_name: Центральный АВ "Киев"
+  :end_date: 10.06.2017
+  :end_time: '08:34'
+  :carrier_name: '"БассисЛайн" ООО'
+  :total_cost: '1500.4'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '18:30'
+  :end_city_name: Киев
+  :station_end_name: Центральный АВ "Киев"
+  :end_date: 10.06.2017
+  :end_time: '09:00'
+  :carrier_name: '"ШляхГМБХ" СпсИИ'
+  :total_cost: '2200'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '19:00'
+  :end_city_name: Киев
+  :station_end_name: Центральный автовокзал
+  :end_date: 10.06.2017
+  :end_time: '09:45'
+  :carrier_name: '"Третий автобусный парк" ОДО'
+  :total_cost: '1187.57'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Москва (Теплый Стан)
+  :start_date: '09.06.2017'
+  :start_time: '20:00'
+  :end_city_name: Киев
+  :station_end_name: г. Киев
+  :end_date: 10.06.2017
+  :end_time: '14:20'
+  :carrier_name: Частное Предприятие "ЛИС-АВТО-ТРАНС"
+  :total_cost: '1300'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '16:00'
+  :end_city_name: Борисполь (аэропорт)
+  :station_end_name: Аэропорт "Борисполь"
+  :end_date: 10.06.2017
+  :end_time: '20:25'
+  :carrier_name: ФЛП Осыпа С.Н., "Гюнсел" ООО
+  :total_cost: '3691.58'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '18:00'
+  :end_city_name: Борисполь (аэропорт)
+  :station_end_name: Аэропорт "Борисполь"
+  :end_date: 10.06.2017
+  :end_time: '20:25'
+  :carrier_name: ФЛП Потынгэ Г.С., "Гюнсел" ООО
+  :total_cost: '3691.58'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '16:00'
+  :end_city_name: Киев
+  :station_end_name: Центральный автовокзал
+  :end_date: 10.06.2017
+  :end_time: '21:30'
+  :carrier_name: ФЛП Осыпа С.Н., "Гюнсел" ООО
+  :total_cost: '3498.10'
+  :currency: RUB
+- :start_city_name: Москва
+  :station_begin_name: Автостанция "Новоясеневская"
+  :start_date: '09.06.2017'
+  :start_time: '18:00'
+  :end_city_name: Киев
+  :station_end_name: Центральный автовокзал
+  :end_date: 10.06.2017
+  :end_time: '21:30'
+  :carrier_name: ФЛП Потынгэ Г.С., "Гюнсел" ООО
+  :total_cost: '3498.10'
+  :currency: RUB
