@@ -1,0 +1,11 @@
+ru:
+  date:
+    day_names: [Вс, Пн, Вт, Ср, Чт, Пт, Сб]
+    everyday: Ежедневно
+  errors:
+    search:
+      same_city: Города совпадают
+      unsufficient_data: Недостаточно данных
+      db_search: Ошибка поиска в БД
+  flash:
+    error: Ошибка

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170813154832) do
+ActiveRecord::Schema.define(version: 20170813161852) do
 
   create_table "carriers", force: :cascade do |t|
     t.string "name"
@@ -36,6 +36,20 @@ ActiveRecord::Schema.define(version: 20170813154832) do
     t.index ["currency_id"], name: "index_route_logs_on_currency_id"
     t.index ["finish_station_id"], name: "index_route_logs_on_finish_station_id"
     t.index ["start_station_id"], name: "index_route_logs_on_start_station_id"
+  end
+
+  create_table "routes", force: :cascade do |t|
+    t.integer "start_station_id"
+    t.integer "finish_station_id"
+    t.integer "weekday"
+    t.integer "departure_hours"
+    t.integer "departure_minutes"
+    t.integer "arrival_hours"
+    t.integer "arrival_minutes"
+    t.integer "carrier_id"
+    t.index ["carrier_id"], name: "index_routes_on_carrier_id"
+    t.index ["finish_station_id"], name: "index_routes_on_finish_station_id"
+    t.index ["start_station_id"], name: "index_routes_on_start_station_id"
   end
 
   create_table "stations", force: :cascade do |t|
