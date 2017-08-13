@@ -27,8 +27,18 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 gem 'interactor'
+
 gem 'pry'
+
 gem 'pry-rails'
+
+gem "twitter-bootstrap-rails"
+
+gem "therubyracer"
+
+gem 'jquery-rails'
+
+gem 'jquery-ui-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
