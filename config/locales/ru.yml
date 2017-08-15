@@ -7,6 +7,9 @@ ru:
       same_city: Города совпадают
       unsufficient_data: Недостаточно данных
       db_search: Ошибка поиска в БД
+    route:
+      equal_src_dst: Города совпадают
+      no_days: Не выбран день
   flash:
     error: Ошибка
   admin:

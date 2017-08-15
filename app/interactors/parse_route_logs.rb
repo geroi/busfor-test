@@ -50,8 +50,8 @@ class ParseRouteLogs
     end
 
     def date_range
-      @date_range || Range.new(assoc.minimum(:departure_date_time).to_datetime,
-                               assoc.maximum(:departure_date_time).to_datetime)
+      @date_range || Range.new(assoc.minimum(:departure_date_time).beginning_of_day.to_datetime,
+                               assoc.maximum(:departure_date_time).end_of_day.to_datetime)
     end
 
     def assoc
@@ -99,7 +99,28 @@ class ParseRouteLogs
   end
 
   def routes
-    route_groups.map { |route_group|
-      Route.create(**route_group.route_params) }
+    route_groups.each do |route_group|
+      visualize_routes(route_group)
+      Route.create(**route_group.route_params).tap do |route|
+        puts route.errors.blank? ? "OK".black.on_green.rjust(20, " ") :
+                                   "ERR #{route.errors.full_messages}".white.on_red
+        puts("\n\n")
+      end
+    end
+    puts("Total accepted #{Route.count}")
+  end
+
+  def visualize_routes(route_logs)
+    dates = route_logs.send(:date_range).to_a
+    puts("ПВСЧПСВ")
+    dates.each_slice(7).each do |week|
+      week_line = week.map.with_index do |date, idx|
+        text = route_logs.find do |rl|
+          rl.try(:departure_date_time).try(:to_date) == date.try(:to_date)
+        end ? "X" : "_"
+        [0,1,2,3,4,5,6].rotate(1)[idx].in?(route_logs.weekdays) ? text.green : text
+      end.join("")
+      puts(week_line)
+    end
   end
 end

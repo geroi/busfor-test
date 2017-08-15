@@ -11,6 +11,10 @@ class Route < ApplicationRecord
     validates "#{direction}_minutes".to_sym, inclusion: { in: 0..59 }
   end
 
+  validates_uniqueness_of :finish_station, scope: [:start_station, :departure_hours, :departure_minutes,
+                                                   :arrival_hours, :arrival_minutes, :carrier,
+                                                   :monday, :tuesday, :wednesday, :thursday, :friday,
+                                                   :saturday, :sunday ]
   validate :check_source_destination_equality
   validate :at_least_one_active_day
 
@@ -61,13 +65,13 @@ class Route < ApplicationRecord
 
   def check_source_destination_equality
     if start_station_id == finish_station_id
-      errors.add(:base, "Source must not be equal to destination")
+      errors.add(:base, I18n.t("errors.route.equal_src_dst"))
     end
   end
 
   def at_least_one_active_day
     unless sunday || monday || tuesday || thursday || friday || saturday || wednesday
-      errors.add(:base, "At least one active day")
+      errors.add(:base, I18n.t("errors.route.no_days"))
     end
   end
 end
