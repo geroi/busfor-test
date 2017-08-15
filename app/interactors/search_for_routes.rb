@@ -5,13 +5,15 @@ class SearchForRoutes
     setup
     validate
     context.routes = find_routes
+  rescue
+    context.fail!
   end
 
   private
 
   def setup
-    @start_city_id = context.start_city_id.try(:to_i)
-    @finish_city_id = context.finish_city_id.try(:to_i)
+    @start_city_id = context.start_city_id.to_i
+    @finish_city_id = context.finish_city_id.to_i
   end
 
   def validate

@@ -21,6 +21,15 @@ class Route < ApplicationRecord
   scope :from_city, ->(city_id) { joins(start_station: :city).where("stations.city_id == ?", city_id) }
   scope :to_city, ->(city_id) { joins(finish_station: :city).where("stations.city_id == ?", city_id) }
 
+  scope :weekday, ->(wday_int) { weekdays([wday_int]) }
+  scope :weekdays, (lambda do |wday_ints|
+    weekdays_params = WEEKDAYS.invert.slice(wday_ints)
+                                     .values
+                                     .map { |wday| [wday, true] }
+                                     .to_h.symbolize_keys
+    where(**weekdays_params)
+  end)
+
   def self.from_and_to_city(source_id, destination_id)
     src_ids = from_city(source_id).pluck(:id)
     dest_ids = to_city(destination_id).pluck(:id)
