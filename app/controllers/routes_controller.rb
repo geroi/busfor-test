@@ -7,7 +7,7 @@ class RoutesController < ApplicationController
     result = SearchForRoutes.call(start_city_id: params.dig(:search,:start_city),
                                   finish_city_id: params.dig(:search,:finish_city))
     if result.success?
-      @route_views = result.route_views
+      @routes = result.routes
     else
       redirect_to :index, flash: { error: result.error }
     end

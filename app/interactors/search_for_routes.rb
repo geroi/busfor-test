@@ -1,16 +1,10 @@
 class SearchForRoutes
   include Interactor
 
-  module SourceDestination
-    attr_accessor :source
-    attr_accessor :destination
-  end
-
   def call
     setup
     validate
-    search
-    context.route_views = wrap_route_views
+    context.routes = find_routes
   end
 
   private
@@ -25,18 +19,10 @@ class SearchForRoutes
     context.fail!(error: I18n.t("errors.search.same_city")) if @start_city_id == @finish_city_id
   end
 
-  def search
-    routes = Route.from_and_to_city(@start_city_id, @finish_city_id)
-    @route_views = GroupRoutes.call(routes: routes).result
+  def find_routes
+    Route.from_and_to_city(@start_city_id, @finish_city_id)
+         .map { |route| RouteDecorator.new(route) }
   rescue
     context.fail!(error: I18n.t("errors.search.db_search"))
-  end
-
-  def wrap_route_views
-    @route_views.tap do |r_v|
-      r_v.extend(SourceDestination)
-      r_v.source = City.find(@start_city_id)
-      r_v.destination = City.find(@finish_city_id)
-    end
   end
 end

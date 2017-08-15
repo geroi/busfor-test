@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170813161852) do
+ActiveRecord::Schema.define(version: 20170814220005) do
 
   create_table "carriers", force: :cascade do |t|
     t.string "name"
@@ -41,12 +41,18 @@ ActiveRecord::Schema.define(version: 20170813161852) do
   create_table "routes", force: :cascade do |t|
     t.integer "start_station_id"
     t.integer "finish_station_id"
-    t.integer "weekday"
     t.integer "departure_hours"
     t.integer "departure_minutes"
     t.integer "arrival_hours"
     t.integer "arrival_minutes"
     t.integer "carrier_id"
+    t.boolean "monday", default: false
+    t.boolean "tuesday", default: false
+    t.boolean "wednesday", default: false
+    t.boolean "thursday", default: false
+    t.boolean "friday", default: false
+    t.boolean "saturday", default: false
+    t.boolean "sunday", default: false
     t.index ["carrier_id"], name: "index_routes_on_carrier_id"
     t.index ["finish_station_id"], name: "index_routes_on_finish_station_id"
     t.index ["start_station_id"], name: "index_routes_on_start_station_id"
